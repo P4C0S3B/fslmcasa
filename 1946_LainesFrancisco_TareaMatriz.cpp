@@ -7,7 +7,7 @@ using namespace std;
 void llenarTabla (int tabla[][MAX], int dim)
 {
     srand(time(NULL));
-    cout<<"La tabla de dimension "<<dim<<"x"<<dim<<" es: "<< endl;
+    cout<<"La matriz de dimension "<<dim<<"x"<<dim<<" es: "<< endl;
     for (int fil=0; fil<dim; fil++)
     {
         for (int col=0; col<dim; col++)
@@ -94,7 +94,7 @@ void comparardiagonales(int tabla[][MAX], int dim)
 
 void solodiagonales(int tabla[][MAX], int dim)
 {
-    cout<<"La tabla unicamente con los valores de las diagonales: "<<endl;
+    cout<<"La matriz unicamente con los valores de las diagonales: "<<endl;
     for(int fil=0; fil<dim; fil++)
     {
         for(int col=0; col<dim; col++)
@@ -118,7 +118,7 @@ main()
     cin>>dimension;
     while(dimension>20)
     {
-        cout<<"La dimension excede el maximo limite permitido. Ingrese un valor mas bajo."<<endl;
+        cout<<"La dimension excede el maximo limite permitido. Por favor ingrese un valor mas bajo."<<endl;
         cin>>dimension;
     }
     llenarTabla(tabla, dimension);
