@@ -7,7 +7,7 @@ using namespace std;
 void llenarTabla (int tabla[][MAX], int dim)
 {
     srand(time(NULL));
-    cout<<"La matriz de dimension "<<dim<<"x"<<dim<<" es: "<< endl;
+    cout<<"La tabla de dimension "<<dim<<"x"<<dim<<" es: "<< endl;
     for (int fil=0; fil<dim; fil++)
     {
         for (int col=0; col<dim; col++)
