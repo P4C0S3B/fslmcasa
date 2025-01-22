@@ -67,7 +67,7 @@ int Dsecundaria(int tabla [][MAX], int dim)
     return sumaD2;
 }
 
-/*void sumadiagonales (int tabla [][MAX], int dim)
+void sumadiagonales (int tabla [][MAX], int dim)
 {
     int valordiagonalP = DPrincipal(tabla, dim);
     int valorDiagonalS = Dsecundaria(tabla, dim);
@@ -75,7 +75,7 @@ int Dsecundaria(int tabla [][MAX], int dim)
     sumadiagonales = valordiagonalP + valorDiagonalS;
     cout<<"El valor de la suma de las diagonales es: "<<sumadiagonales<<endl;
     
-}*/
+}
 void comparardiagonales(int tabla[][MAX], int dim)
 {
     int valordiagonalP = DPrincipal(tabla, dim);
@@ -123,7 +123,7 @@ main()
     }
     llenarTabla(tabla, dimension);
     verTabla(tabla, dimension);
-    //sumadiagonales(tabla, dimension);//
+    sumadiagonales(tabla, dimension);
     comparardiagonales(tabla, dimension);
     solodiagonales(tabla, dimension);
 }
