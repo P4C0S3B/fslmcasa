@@ -47,14 +47,15 @@ bool isBusquedaBInaria(int v[], int ne, int elemento)
     {
         if(Icentro == elemento)
         {
-            return Icentro;
+            return true;
         } else if(elemento < Icentro)
         {
             Iarriba=Icentro-1;
-        } else {
+            return true;
+        } else if(elemento > Icentro){
             Iabajo=Icentro+1;
+            return true;
         }
-        return true;
     }
     return false;
 }
