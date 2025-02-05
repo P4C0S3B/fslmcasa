@@ -62,7 +62,7 @@ bool isBusquedaBInaria(int v[], int ne, int elemento)
 
 main()
 {
-    //srand(time(NULL));//
+    srand(time(NULL));
     int numElem, dato;
     cout<<"Ingrese el numero de elementos: ";
     cin>>numElem;
